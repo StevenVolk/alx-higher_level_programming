@@ -12,12 +12,16 @@ if __name__ = "__main__":
     b = int(arg[3])
     if arg[2] == "+":
         print("{0:d} + {1:d} = {2:d}".format(a, b, add(a, b)))
+        exit(0)
     elif arg[2] == "-":
         print("{0:d} - {1:d} = {2:d}".format(a, b, sub(a, b)))
+        exit(0)
     elif arg[2] == "*":
         print("{0:d} * {1:d} = {2:d}".format(a, b, mul(a, b)))
+        exit(0)
     elif arg[2] == "/":
         print("{0:d} / {1:d} = {2:d}".format(a, b, div(a, b)))
+        exit(0)
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
