@@ -5,7 +5,7 @@ from calculator_1 import add, sub, mul, div
 if __name__ = "__main__":
     arg = sys.argv
     arg_len = len(sys.argv)
-    if arg_len < 4:
+    if arg_len != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     a = int(arg[1])
