@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "/usr/include/python3.8/object.h"
 #include "/usr/include/python3.8/listobject.h"
+#include "/usr/include/python3.8/Python.h"
 
 /**
  * print_python_list_info - prints some basic info about Python lists
@@ -11,7 +12,7 @@
 void print_python_list_info(PyObject *p)
 {
 	PyListObject *python_list = (PyListObject *) p;
-	int i, list_length = PyList_Size(p);
+	int i, list_length = Py_SIZE(p);
 	PyObject *element;
 
 	printf("[*] Size of the Python List = %d\n", list_length);
