@@ -1,10 +1,12 @@
 #include <stdio.h>
-#include "/usr/include/python3.8/Python.h"
+#include "/usr/include/python3.4/Python.h"
+#include "/usr/include/python3.4/listobject.h"
+#include "/usr/inlcude/python3.4/object.h"
 
 /**
  * print_python_list_info - prints some basic info about Python lists
  * @p: python list
- * Return: nothin
+ * Return: nothing
  */
 
 void print_python_list_info(PyObject *p)
