@@ -7,5 +7,4 @@ def best_score(a_dictionary):
     for key, value in a_dictionary:
         if best == value:
             return key
-        else:
-            return None
+    return None
