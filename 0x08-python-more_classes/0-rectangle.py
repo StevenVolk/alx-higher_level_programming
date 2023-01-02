@@ -1,5 +1,12 @@
 #!/usr/bin/python3
 
+"""
+A module with an empty class Rectangle
+"""
+
 class Rectangle:
-    def __init__:
-        pass
+    """
+    An empty class Rectangle
+    """
+
+    pass
