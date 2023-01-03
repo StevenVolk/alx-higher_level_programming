@@ -2,7 +2,6 @@
 """
 An empty class Rectangle
 """
-
 class Rectangle:
     """
     An empty class Rectangle
