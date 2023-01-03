@@ -8,8 +8,8 @@ A rectangle class
 
 class Rectangle:
     def __init__(self, width = 0, height = 0):
-        width(width)
-        height(height)
+        self.width(width)
+        self.height(height)
 
     def width(self):
         """
@@ -33,7 +33,7 @@ class Rectangle:
         if self.check_positive(value) is False:
             raise ValueError("width must be >= 0")
 
-        self.width = width
+        self.width = value
 
     def height(self):
         """
@@ -44,7 +44,7 @@ class Rectangle:
 
         return self.height
 
-    def height(self, height):
+    def height(self, value):
         """
 
         assigns a value to height
@@ -57,9 +57,9 @@ class Rectangle:
         if self.check_positive(value) is False:
             raise ValueError("height must be >= 0")
 
-        self.height = height
+        self.height = value
 
-    def check_value_int(value):
+    def check_value_int(self, value):
         """
 
         checks if a value is of type int
@@ -70,7 +70,7 @@ class Rectangle:
             return True
         return False
 
-    def check_positive(value):
+    def check_positive(self, value):
         """
 
         check if a value is greater or equal to zero
