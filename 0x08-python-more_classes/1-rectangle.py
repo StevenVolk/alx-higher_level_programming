@@ -13,6 +13,7 @@ class Rectangle:
         if self.check_value_int(height) and self.check_positive(height):
             self.__height = height
 
+    @property
     def width(self):
         """
 
@@ -22,6 +23,7 @@ class Rectangle:
 
         return self.__width
 
+    @width.setter
     def width(self, value):
         """
 
@@ -37,6 +39,7 @@ class Rectangle:
 
         self.__width = value
 
+    @property
     def height(self):
         """
 
@@ -46,6 +49,7 @@ class Rectangle:
 
         return self.__height
 
+    @height.setter
     def height(self, value):
         """
 
