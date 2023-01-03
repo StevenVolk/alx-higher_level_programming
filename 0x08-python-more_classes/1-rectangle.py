@@ -8,8 +8,10 @@ A rectangle class
 
 class Rectangle:
     def __init__(self, width = 0, height = 0):
-        self.width(width)
-        self.height(height)
+        if self.check_value_int(width) and self.check_positive(width):
+            self.__width = width
+        if self.check_value_int(height) and self.check_positive(height):
+            self.__height = height
 
     def width(self):
         """
