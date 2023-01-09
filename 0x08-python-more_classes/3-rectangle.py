@@ -96,9 +96,11 @@ class Rectangle:
 
         """
 
-        if (self.__width == 0 or self.__height == 0):
+        w = self.__width
+        h = self.__height
+        if (w == 0 or h == 0):
             print("")
-        for i in self.__height:
-            for j in self.__width:
+        for i in h:
+            for j in w:
                 print("#", end="")
             print("")
