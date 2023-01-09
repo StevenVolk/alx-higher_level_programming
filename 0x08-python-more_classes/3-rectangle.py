@@ -102,3 +102,17 @@ class Rectangle:
             for j in self.__width:
                 print("#", end="")
             print("")
+
+    def print(self):
+        """
+
+        print the rectangle with the character #
+
+        """
+
+        if (self.__width == 0 or self.__height == 0):
+            print("")
+        for i in self.__height:
+            for j in self.__width:
+                print("#", end="")
+            print("")
