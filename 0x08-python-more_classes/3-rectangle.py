@@ -89,21 +89,7 @@ class Rectangle:
             return 0
         return 2 * (self.__width + self.__height)
 
-    def str(self):
-        """
-
-        print the rectangle with the character #
-
-        """
-
-        if (self.__width == 0 or self.__height == 0):
-            print("")
-        for i in self.__height:
-            for j in self.__width:
-                print("#", end="")
-            print("")
-
-    def print(self):
+    def __str__(self):
         """
 
         print the rectangle with the character #
