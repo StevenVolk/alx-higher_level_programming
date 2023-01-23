@@ -6,4 +6,7 @@ def safe_print_list(my_list=[], x=0):
             print(my_list[i], end="")
         except:
             break
-    return(i)
+    print()
+    if (i < x):
+        return(i)
+    return(i + 1)
