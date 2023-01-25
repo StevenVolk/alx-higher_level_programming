@@ -70,7 +70,8 @@ class SinglyLinkedList:
                 new_node.next_node = node
                 break
             elif node.next_node is None:
-                prev.next_node = new_node
+                node.next_node = new_node
+                break
             else:
                 prev = node
                 node = node.next_node
