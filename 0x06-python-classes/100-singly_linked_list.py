@@ -35,7 +35,7 @@ class Node:
     def next_node(self, value):
         if type(value) is not Node or value is not None:
             raise TypeError("next_node must be a Node object")
-        self.next_node = value
+        self.__next_node = value
 
 
 """
