@@ -74,7 +74,7 @@ class SinglyLinkedList:
         node = self.__head
         data = ""
         while(node):
-            data = data + node.data
+            data = data + "{:d}".format(node.data)
             node = node.next_node
             if node:
                 data += "\n"
