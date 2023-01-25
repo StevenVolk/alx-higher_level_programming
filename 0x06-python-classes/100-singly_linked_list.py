@@ -64,10 +64,10 @@ class SinglyLinkedList:
         while(node):
             if new_node.data < node.data:
                 if prev:
-                    prev.next = new_node
+                    prev.next_node = new_node
                 else:
                     self.__head = new_node
-                new_node.next = node
+                new_node.next_node = node
                 break
             else:
                 prev = node
