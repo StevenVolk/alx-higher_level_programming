@@ -65,6 +65,8 @@ class SinglyLinkedList:
             if new_node.data < node.data:
                 if prev:
                     prev.next = new_node
+                else:
+                    self.__head = new_node
                 new_node.next = node
                 break
             else:
