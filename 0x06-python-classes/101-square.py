@@ -72,7 +72,7 @@ class Square:
     def __str__(self):
         data = ""
         if self.size == 0:
-            data += "\n"
+            data += " \n"
         else:
             for k in range(self.position[1]):
                 data += "\n"
