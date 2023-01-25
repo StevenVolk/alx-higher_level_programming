@@ -72,6 +72,8 @@ class SinglyLinkedList:
             else:
                 prev = node
                 node = node.next_node
+        if node.next_node is None:
+            node.next_node = new_node
 
     def __str__(self):
         node = self.__head
