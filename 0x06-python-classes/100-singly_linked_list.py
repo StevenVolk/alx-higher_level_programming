@@ -72,6 +72,8 @@ class SinglyLinkedList:
 
     def __str__(self):
         node = self.__head
+        data = ""
         while(node):
-            print(node.data)
+            data = data + node.data + "\n"
             node = node.next_node
+        return(data)
