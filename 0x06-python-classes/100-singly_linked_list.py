@@ -14,8 +14,8 @@ class Node:
     """
 
     def __init__(self, data, next_node=None):
-        self.data = data
-        self.next_node = next_node
+        self.data(data)
+        self.next_node(next_node)
 
     @property
     def data(self):
@@ -56,7 +56,7 @@ class SinglyLinkedList:
         self.__head = None
 
     def sorted_insert(self, value):
-        new_node = Node(value, None)
+        new_node = Node(value)
         if self.__head is None:
             self.__head = new_node
         prev_node = None
