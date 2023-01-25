@@ -72,10 +72,10 @@ class SinglyLinkedList:
 
     def __str__(self):
         node = self.__head
-        data = ""
+        d = ""
         while(node):
-            data = data + "{:d}".format(node.data)
+            d += "{:d}".format(node.data)
             node = node.next_node
             if node:
-                data += "\n"
-        return(data)
+                d += "\n"
+        return(d)
