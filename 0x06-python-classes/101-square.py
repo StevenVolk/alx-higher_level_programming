@@ -81,5 +81,4 @@ class Square:
                     data += " "
                 for j in range(self.size):
                     data += "#"
-                data += "\n"
         return(data)
