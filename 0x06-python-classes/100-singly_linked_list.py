@@ -70,7 +70,7 @@ class SinglyLinkedList:
             else:
                 node = node.next_node
 
-    def __str__(self):
+    def __repr__(self):
         node = self.__head
         d = ""
         while(node):
