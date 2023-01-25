@@ -33,7 +33,7 @@ class Node:
 
     @next_node.setter
     def next_node(self, value):
-        if typee(value) is not Node or value is not None:
+        if type(value) is not Node or value is not None:
             raise TypeError("next_node must be a Node object")
         self.next_node = value
 
