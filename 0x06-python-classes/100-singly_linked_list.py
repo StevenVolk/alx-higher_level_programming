@@ -69,11 +69,11 @@ class SinglyLinkedList:
                     self.__head = new_node
                 new_node.next_node = node
                 break
+            elif node.next_node is None:
+                prev.next_node = new_node
             else:
                 prev = node
                 node = node.next_node
-        if node is None:
-            prev.next_node = new_node
 
     def __str__(self):
         node = self.__head
