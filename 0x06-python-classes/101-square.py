@@ -69,5 +69,17 @@ class Square:
         else:
             self.__position = value
 
-    def __repr__(self):
-        return(self.my_print())
+    def __str__(self):
+        data = ""
+        if self.size == 0:
+            data = "\n"
+        else:
+            for k in range(self.position[1]):
+                data += "\n"
+            for i in range(self.size):
+                for z in range(self.position[0]):
+                    data += " "
+                for j in range(self.size):
+                    data += "#"
+                data += "\n"
+        return(data)
