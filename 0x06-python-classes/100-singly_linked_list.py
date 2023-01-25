@@ -73,6 +73,7 @@ class SinglyLinkedList:
                 prev = node
                 node = node.next_node
         if node is None:
+            print("d")
             node = new_node
 
     def __str__(self):
