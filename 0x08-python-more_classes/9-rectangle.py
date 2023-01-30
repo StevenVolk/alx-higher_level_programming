@@ -142,4 +142,4 @@ class Rectangle:
         return rect_2
 
     def square(cls, size=0):
-        return Rectangle(size, size)
+        return Rectangle(cls.width=size, cls.height=size)
