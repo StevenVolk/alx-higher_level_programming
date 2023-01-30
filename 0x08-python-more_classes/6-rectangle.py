@@ -16,6 +16,7 @@ class Rectangle:
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
+        global number_of_instances
         number_of_instances += 1
         self.height = height
         self.width = width
@@ -125,5 +126,6 @@ class Rectangle:
 
         """
 
+        global number_of_instances
         number_of_instances -= 1
         print("Bye rectangle...")
