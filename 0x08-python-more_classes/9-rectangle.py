@@ -143,4 +143,4 @@ class Rectangle:
 
     def square(cls, size=0):
         cls.size = size
-        Rectangle(cls.size, cls.size)
+        return self.Rectangle(cls.size, cls.size)
