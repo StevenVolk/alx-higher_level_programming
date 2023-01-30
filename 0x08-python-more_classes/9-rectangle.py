@@ -142,4 +142,11 @@ class Rectangle:
         return rect_2
 
     def square(cls, size=0):
+        """
+
+        An instance of a square using class Rectangle
+
+        """
+
+
         return Rectangle(cls.width=size, cls.height=size)
