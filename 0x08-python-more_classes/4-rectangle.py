@@ -113,4 +113,4 @@ class Rectangle:
 
         """
 
-        print("Rectangle({}, {})".format(self.__width, self.__height))
+        return("Rectangle({}, {})".format(self.__width, self.__height))
