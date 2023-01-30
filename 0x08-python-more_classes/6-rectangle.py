@@ -126,6 +126,3 @@ class Rectangle:
         """
 
         print("Bye rectangle...")
-
-    def number_of_instances():
-        return number_of_instances
