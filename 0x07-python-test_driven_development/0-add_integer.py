@@ -13,7 +13,7 @@ def add_integer(a, b=98):
     a method that adds 2 integers
 
     """
-    
+
     if type(a) is not float and type(a) is not int:
         raise TypeError("a must be an integer")
 
