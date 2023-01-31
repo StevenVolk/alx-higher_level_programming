@@ -142,7 +142,10 @@ class Rectangle:
         return rect_2
 
     def square(cls, size=0):
-        sq = Rectangle(size, size)
-        sq.width = size
-        sq.height = size
-        return sq
+        """
+
+        returns a new Rectangle instance with width == height == size
+
+        """
+
+        return Rectangle(size, size)
