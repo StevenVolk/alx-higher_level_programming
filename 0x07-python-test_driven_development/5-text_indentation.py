@@ -18,13 +18,14 @@ def text_indentation(text):
 
     if type(text) is not str:
         raise TypeError("text must be a string")
-    p_char = ''
+    p_char = False
     for char in text:
-        if (p_char == '.' or p_char == ':' or p_char == "?") and char == ' ':
+        if (p_char == True) and char == ' ':
             pass
         elif char == '.' or char == '?' or char == ':':
             print(char)
             print()
+            p_char = True
         else:
             print(char, end='')
-        p_char = char
+            p_char = False
