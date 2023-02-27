@@ -20,7 +20,7 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     p_char = False
     for char in text:
-        if (p_char == True) and char == ' ':
+        if p_char and char == ' ':
             pass
         elif char == '.' or char == '?' or char == ':':
             print(char)
