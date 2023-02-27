@@ -21,10 +21,10 @@ def print_square(size):
 
     if size == 0:
         print()
-
-    for i in size:
-        for j in size:
-            if j < size - 1:
-                print("#", end="")
-            else:
-                print("#")
+    else:
+        for i in size:
+            for j in size:
+                if j < size - 1:
+                    print("#", end="")
+                else:
+                    print("#")
