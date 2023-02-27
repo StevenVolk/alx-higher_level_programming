@@ -16,7 +16,7 @@
 	so
 	>>> text_indentation("so:")
 	so:
-	>>> text_indentation("so?")
+	>>> text_indentation("so? John")
 	so?
 
-	$>>>
+	John

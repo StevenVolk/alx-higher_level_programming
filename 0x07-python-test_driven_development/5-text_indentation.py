@@ -22,8 +22,9 @@ def text_indentation(text):
     for char in text:
         if (p_char == '.' or p_char == '?' or p_char == ":") and char == ' ':
             char = ''
-        print(char, end='')
         if char == '.' or char == '?' or char == ':':
+            print(char)
             print()
-            print()
+        else:
+            print(char, end='')
         p_char = char
