@@ -6,7 +6,7 @@
 	TypeError: text_indentation() missing 1 required positional argument: 'text'
 	>>> text_indentation("So, because.")
 	So, because.
-
+	<BLANKLINE>
 	>>>
 	>>> text_indentation(5)
 	Traceback (most recent call last):
@@ -16,9 +16,8 @@
 	so
 	>>> text_indentation("so:")
 	so:
-	
-
+	<BLANKLINE>
 	>>> text_indentation("so? John")
 	so?
-...
+	<BLANKLINE>
 	John
