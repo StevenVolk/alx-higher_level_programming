@@ -21,10 +21,9 @@ def print_square(size):
 
     if size == 0:
         print()
-    else:
-        for i in size:
-            for j in size:
-                if j < size - 1:
-                    print("#", end="")
-                else:
-                    print("#")
+    for i in range(size):
+        for j in range(size):
+            if j < size - 1:
+                print("#", end="")
+            else:
+                print("#")
