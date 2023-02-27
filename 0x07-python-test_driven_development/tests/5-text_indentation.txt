@@ -18,5 +18,5 @@
 	so:
 	>>> text_indentation("so? John")
 	so?
-
+	
 	John
