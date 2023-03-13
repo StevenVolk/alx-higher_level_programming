@@ -7,9 +7,16 @@
 >>> mylist.append(-1)
 
 >>> mylist.print_sorted()
-
+[-1, 1]
 >>> mylist1 = MyList()
 
 >>> mylist1.print_sorted()
-
+[]
 >>> mylist2 = MyList()
+
+>>> mylist2.append(-1)
+
+>>> mylist2.append(2)
+
+>>> mylist2.print_sorted()
+[-1, 2]
