@@ -21,4 +21,4 @@ class MyList(list):
 
         """
 
-        print(self.sort())
+        print(self__name__.sort())
