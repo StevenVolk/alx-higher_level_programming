@@ -31,4 +31,4 @@ class MyList(list):
 
         """
 
-        print(self)
+        print(Mylist(self).sort())
