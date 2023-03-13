@@ -2,7 +2,7 @@
 
 """
 
-A function that returns the list of available attributes and methods of an object
+This function returns a list of all attributes and methods of an object
 
 """
 
@@ -10,7 +10,7 @@ A function that returns the list of available attributes and methods of an objec
 def lookup(obj):
     """
 
-    A method that returns the list of available attributes and methods of an object
+    This method returns a list of all attributes and methods of an object
 
     """
 
