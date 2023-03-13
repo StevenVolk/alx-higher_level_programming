@@ -24,7 +24,6 @@ class MyList(list):
 
         self.__init__() = super().__init__()
 
-
     def print_sorted(self):
         """
 
