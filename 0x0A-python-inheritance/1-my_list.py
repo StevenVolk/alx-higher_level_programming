@@ -17,7 +17,7 @@ class MyList(list):
     def __init__(self):
         """
 
-        initializing
+        initializing the class
 
         """
 
