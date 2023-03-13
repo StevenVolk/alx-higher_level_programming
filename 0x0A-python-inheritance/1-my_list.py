@@ -30,5 +30,5 @@ class MyList(list):
 
         """
 
-        cp = MyList(self
+        cp = MyList(self)
         print(cp.sort())
