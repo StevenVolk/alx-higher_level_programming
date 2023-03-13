@@ -6,6 +6,10 @@
 
 >>> mylist.append(-1)
 
->>> [].print_sorted()
+>>> mylist.print_sorted()
 
->>> MyList([]).print_sorted()
+>>> mylist1 = MyList()
+
+>>> mylist1.print_sorted()
+
+>>> mylist2 = MyList()
