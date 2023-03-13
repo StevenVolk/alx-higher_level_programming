@@ -6,3 +6,6 @@
 
 >>> mylist.append(-1)
 
+>>> [].print_sorted()
+
+>>> MyList([]).print_sorted()
