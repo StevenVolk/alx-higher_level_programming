@@ -14,7 +14,6 @@ class MyList(list):
 
     """
 
-
     def __init__(self):
         """
 
@@ -31,4 +30,4 @@ class MyList(list):
 
         """
 
-        print(Mylist(self).sort())
+        print(MyList(self).sort())
