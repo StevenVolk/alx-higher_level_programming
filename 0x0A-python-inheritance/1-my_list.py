@@ -14,6 +14,9 @@ class MyList(list):
 
     """
 
+    def __init__(self, iterable):
+        super().__init__(int(item) for item in iterable)
+
     def print_sorted(self):
         """
 
