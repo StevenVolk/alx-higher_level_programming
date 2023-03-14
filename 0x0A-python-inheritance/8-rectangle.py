@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-#BaseGeometry = __import__('7-base_geometry').BaseGeometry
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+bg = BaseGeometry()
 
 """
 
@@ -8,7 +9,7 @@ A class Rectangle that inherits from BaseGeometry (7-base_geometry.py)
 """
 
 
-class Rectangle(BaseGeometry):
+class Rectangle(bg):
     """
 
     A class Rectangle that inherits from BaseGeometry
@@ -22,7 +23,7 @@ class Rectangle(BaseGeometry):
 
         """
 
-        if BaseGeometry.integer_validator(self, width):
+        if bg.integer_validator(self, width):
             self.width = width
-        if BeseGeometry.integer_validator(self, height):
+        if bg.integer_validator(self, height):
             self.height = height
