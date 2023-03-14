@@ -16,6 +16,12 @@ class Rectangle(BaseGeometry):
     """
 
     def __init__(self, width, height):
+        """
+
+        Inializing class
+
+        """
+
         if BaseGeometry.integer_validator(self, width):
             self.width = width
         if BeseGeometry.integer_validator(self, height):
