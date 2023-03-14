@@ -21,6 +21,6 @@
 >>> mylist2.print_sorted()
 [-1, 2]
 >>> mylist3 = mylist2.print_sorted()
-
+[-1, 2]
 >>> mylist3 is mylist2
 False
