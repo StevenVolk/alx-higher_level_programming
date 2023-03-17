@@ -6,7 +6,7 @@ A class Rectangle that inherits from BaseGeometry (7-base_geometry.py)
 """
 
 
-class Rectangle(bg):
+class Rectangle():
     """
 
     A class Rectangle that inherits from BaseGeometry
