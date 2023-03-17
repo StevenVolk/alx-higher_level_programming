@@ -23,7 +23,7 @@ class MyInt(int):
 
         self.integer = integer
 
-    def __eq__(self, other):
+    def __eq__(self.integer, other):
         """
 
         == operator inverted for !=
@@ -32,7 +32,7 @@ class MyInt(int):
 
         int.__ne__(self.integer, other)
 
-    def __ne__(self, other):
+    def __ne__(self.integer, other):
         """
 
         != operator inverted for ==
