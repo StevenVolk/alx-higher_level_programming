@@ -23,7 +23,7 @@ class Rectangle(bg):
 
         """
 
-        if bg.integer_validator(self, width):
+        if bg.integer_validator(self, "width", width):
             self.width = width
-        if bg.integer_validator(self, height):
+        if bg.integer_validator(self, "height", height):
             self.height = height
