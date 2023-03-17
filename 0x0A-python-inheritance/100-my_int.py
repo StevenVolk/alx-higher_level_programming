@@ -23,20 +23,20 @@ class MyInt(int):
 
         self.integer = integer
 
-    def __eq__(self.integer, other):
+    def __eq__(self, other):
         """
 
         == operator inverted for !=
 
         """
 
-        int.__ne__(self.integer, other)
+        return self.integer != other
 
-    def __ne__(self.integer, other):
+    def __ne__(self, other):
         """
 
         != operator inverted for ==
 
         """
 
-        int.__eq__(self.integer, other)
+        return self.integer == other
