@@ -30,10 +30,10 @@ class Rectangle(BaseGeometry):
 
         """
 
-        if BaseGeometry.integer_validator(self, "width", width):
-            self.width = width
-        if BaseGeometry.integer_validator(self, "height", height):
-            self.height = height
+        BaseGeometry.integer_validator(self, "width", width):
+        self.width = width
+        BaseGeometry.integer_validator(self, "height", height):
+        self.height = height
 
     def area(self):
         """
