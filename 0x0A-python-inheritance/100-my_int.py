@@ -14,6 +14,15 @@ class MyInt(int):
 
     """
 
+    def __init__(self, integer):
+        """
+
+        Initializing integer
+
+        """
+
+        self.integer = integer
+
     def __eq__(self, other):
         """
 
@@ -21,7 +30,7 @@ class MyInt(int):
 
         """
 
-        int.__ne__(self, other)
+        int.__ne__(self.integer, other)
 
     def __ne__(self, other):
         """
@@ -30,4 +39,4 @@ class MyInt(int):
 
         """
 
-        int.__eq__(self, other)
+        int.__eq__(self.integer, other)
