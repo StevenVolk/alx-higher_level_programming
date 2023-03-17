@@ -51,4 +51,4 @@ class Rectangle(BaseGeometry):
 
         """
 
-        return "[Rectangle] {}/{}".format(width, height)
+        return "[Rectangle] {}/{}".format(self.width, self.height)
