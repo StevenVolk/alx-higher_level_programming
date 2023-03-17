@@ -16,7 +16,7 @@ A class Square that inherits from Rectangle (9-rectangle.py)
 """
 
 
-class Square:
+class Square(Rectangle):
     """
 
     A class Square that inherits from Rectangle (9-rectangle.py)
