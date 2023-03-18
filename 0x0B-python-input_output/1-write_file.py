@@ -16,5 +16,5 @@ def write_file(filename="", text=""):
 
     """
 
-    with open(filename) as f:
+    with open(filename, "a") as f:
         f.write(text)
