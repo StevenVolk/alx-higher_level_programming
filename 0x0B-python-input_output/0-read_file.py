@@ -16,4 +16,4 @@ def read_file(filename=""):
 
     with open(filename) as text:
         print_out = text.read()
-        print(print_out)
+        print(print_out.encode("utf8"))
