@@ -42,6 +42,12 @@ def add_items_to_json_file():
     p_list = []
 
     for i in range(1, len(sys.argv)):
+        """
+
+        for loop
+
+        """
+
         p_list.append(sys.argv[i])
 
     my_list = load_from_json_file('add_item.json')
