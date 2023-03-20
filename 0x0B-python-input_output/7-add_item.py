@@ -30,7 +30,6 @@ and then save them to a file
 
 """
 
-
 p_list = []
 
 for i in (1, len(sys.argv)):
