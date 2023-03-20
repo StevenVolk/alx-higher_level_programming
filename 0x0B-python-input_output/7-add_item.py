@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 
 Using function save_to_json_file from 5-save_to_json_file.py
@@ -41,6 +40,12 @@ for i in (1, len(sys.argv)):
     """
 
     p_list.append(sys.argv[i])
+
+"""
+
+sm
+
+"""
 
 my_list = load_from_json_file('add_item.json')
 mylist.extend(p_list)
