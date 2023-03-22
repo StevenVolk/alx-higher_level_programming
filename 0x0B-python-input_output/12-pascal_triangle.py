@@ -21,15 +21,15 @@ def pascal_triangle(n):
         return l_of_list
 
     for i in range(1, n+1):
-        l = []
+        _list = []
         for j in range(0, i):
             if j == 0:
-                l.append(1)
+                _list.append(1)
             elif j == i - 1:
-                l.append(1)
+                _list.append(1)
             else:
-                l.append(prev[j] + prev[j-1])
-        l_of_list.append(l)
-        prev = l
+                _list.append(prev[j] + prev[j-1])
+        l_of_list.append(_list)
+        prev = _list
 
     return l_of_list
