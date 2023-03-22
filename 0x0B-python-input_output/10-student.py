@@ -22,6 +22,9 @@ class Student:
         attr_dict = self.__dict__
         attr = dict()
 
+        if attrs == None:
+            return attr_dict
+
         for att in attrs:
             if att in attr_dict:
                 attr[att] = attr_dict[att]
