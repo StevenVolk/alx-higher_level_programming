@@ -22,7 +22,7 @@ def pascal_triangle(n):
 
     for i in range(1, n+1):
         l = []
-        for j in i:
+        for j in range(0, i):
             if j == 0:
                 l.append(1)
             elif j == i - 1:
