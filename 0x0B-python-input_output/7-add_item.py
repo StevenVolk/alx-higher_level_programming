@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+import os
+import sys
 """
 
 Using function save_to_json_file
@@ -18,24 +20,6 @@ from 6-load_from_json_file.py
 
 
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
-
-"""
-
-importing sys
-
-"""
-
-
-import sys
-
-"""
-
-importing os
-
-"""
-
-
-import os
 
 """
 
@@ -64,6 +48,7 @@ def add_items_to_json_file():
         my_list = []
     my_list.extend(p_list)
     save_to_json_file(my_list, 'add_item.json')
+
 
 """
 
