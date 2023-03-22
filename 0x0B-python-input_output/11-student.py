@@ -1,6 +1,15 @@
 #!/usr/bin/python3
 """
 
+importing json
+
+"""
+
+
+import json
+
+"""
+
 A class Student that defines a student
 
 """
@@ -32,4 +41,7 @@ class Student:
         return attr
 
     def reload_from_json(self, json):
-        return self
+        from_json = json.loads(json)
+        self.first_name = from_json[first_name]
+        self.last_name = from_json[last_name]
+        self.age = from_json[age]
