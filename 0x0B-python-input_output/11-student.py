@@ -32,6 +32,6 @@ class Student:
         return attr
 
     def reload_from_json(self, json):
-        self.first_name = json[first_name]
+        self.first_name = json
         self.last_name = json[last_name]
         self.age = json[age]
