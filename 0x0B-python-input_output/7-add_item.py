@@ -30,6 +30,15 @@ import sys
 
 """
 
+importing os
+
+"""
+
+
+import os
+
+"""
+
 a script that adds all arguments to a Python list,
 and then save them to a file
 
@@ -49,7 +58,10 @@ def add_items_to_json_file():
     for i in range(1, len(sys.argv)):
         p_list.append(sys.argv[i])
 
-    my_list = load_from_json_file('add_item.json')
+    if os.path.exists('add_item.json'):
+        my_list = load_from_json_file('add_item.json')
+    else:
+        my_list = []
     my_list.extend(p_list)
     save_to_json_file(my_list, 'add_item.json')
 
