@@ -22,7 +22,7 @@ class Student:
         attr_dict = self.__dict__
         attr = dict()
 
-        if attrs == None:
+        if attrs is None:
             return attr_dict
 
         for att in attrs:
