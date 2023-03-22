@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 
-Using function save_to_json_file from 5-save_to_json_file.py
+Using function save_to_json_file
+from 5-save_to_json_file.py
 
 """
 
@@ -10,7 +11,8 @@ save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 
 """
 
-Using function load_from_json_file from 6-load_from_json_file.py
+Using function load_from_json_file
+from 6-load_from_json_file.py
 
 """
 
@@ -19,6 +21,7 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 """
 
+importing sys
 importing sys
 
 """
@@ -48,7 +51,7 @@ def add_items_to_json_file():
         p_list.append(sys.argv[i])
 
     my_list = load_from_json_file('add_item.json')
-    mylist.extend(p_list)
+    my_list.extend(p_list)
     save_to_json_file(my_list, 'add_item.json')
 
 """
