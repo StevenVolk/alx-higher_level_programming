@@ -158,7 +158,7 @@ class Rectangle(Base):
         """ Returns [Rectangle] (<id>) <x>/<y> - <width>/<height> """
 
         return "[Rectangle] ({0}) {1}/{2} - {3}/{4}"\
-            .format(self.id, self.__x, self.__y, self.__width, self.height)
+            .format(self.id, self.__x, self.__y, self.__width, self.__height)
 
     def __update(self, id=None, width=None, height=None, x=None, y=None):
         """ assigns an argument to each attribute """
