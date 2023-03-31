@@ -163,7 +163,7 @@ class Rectangle(Base):
     def __update(self, id=None, width=None, height=None, x=None, y=None):
         """ assigns an argument to each attribute """
         if id is not None:
-            self.id(id)
+            self.id = id
         if width is not None:
             self.width = width
         if height is not None:
