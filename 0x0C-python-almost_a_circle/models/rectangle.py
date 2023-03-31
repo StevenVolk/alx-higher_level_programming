@@ -162,13 +162,18 @@ class Rectangle(Base):
 
     def update(self, *args):
         """ assigns an argument to each attribute """
-        if len(*args) >= 5:
-            self.y(args[4])
-        if len(*args) >= 4:
-            self.x(args[3])
-        if len(*args) >= 3:
-            self.height(args[2])
-        if len(*args) >= 2:
-            self.width(args[1])
-        if len(*args) >= 1:
-            self.id(args[0])
+        l_args = 0
+        arg_data = []
+        for arg in args:
+            l_args++
+            arg_data.append(arg)
+        if l_args >= 1:
+            self.id(arg_data[0])
+        if l_args >= 2:
+            self.width(arg_data[1])
+        if l_args >= 3:
+            self.height(arg_data[2])
+        if l_args >= 4:
+            self.x(arg_data[3])
+        if l_args >= 5:
+            self.y(arg_data[4])
