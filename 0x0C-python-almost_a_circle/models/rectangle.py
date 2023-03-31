@@ -71,16 +71,18 @@ class Rectangle(Base):
 
     def x(self):
         """
-        
+
         getting x
 
         """
         return self.__x
 
+    @setter.y
     def y(self, y):
         """setting y"""
         self.__y = y
 
+    @property
     def y(self):
         """
         getting y
