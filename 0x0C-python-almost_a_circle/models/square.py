@@ -26,8 +26,8 @@ class Square(Rectangle):
         """ initializing """
         super().__init__(size, size, x, y, id)
 
+    @overload
     def __str__(self):
         """ return [Square] (<id>) <x>/<y> - <size> """
-
         return "[{}] ({}) {}/{} - {}"\
             .format(type(self).__name__, self.__x, self.__y, self.__width)
