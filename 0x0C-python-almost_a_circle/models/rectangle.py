@@ -173,7 +173,9 @@ class Rectangle(Base):
         if y is not None:
             self.y = y
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ assigns an argument to each attribute """
         if args:
             self.__update(*args)
+        elif kwargs:
+            self.__update(**kwargs)
