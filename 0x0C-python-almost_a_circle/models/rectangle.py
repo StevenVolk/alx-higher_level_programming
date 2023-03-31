@@ -161,6 +161,7 @@ class Rectangle(Base):
             .format(self.id, self.__x, self.__y, self.__width, self.height)
 
     def update(self, *args):
+        """ assigns an argument to each attribute """
         if len(*args) >= 5:
             self.y(args[4])
         if len(*args) >= 4:
