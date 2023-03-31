@@ -154,4 +154,4 @@ class Rectangle(Base):
         """ Returns [Rectangle] (<id>) <x>/<y> - <width>/<height> """
 
         return "[Rectangle] ({0}) {1}/{2} - {3}/{4}"\
-                .format(self.id, self.__x, self.__y, self.__width, self.height)
+            .format(self.id, self.__x, self.__y, self.__width, self.height)
