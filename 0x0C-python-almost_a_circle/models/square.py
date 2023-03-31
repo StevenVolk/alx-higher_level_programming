@@ -24,7 +24,7 @@ Square(Rectangle):
 
     def __init__(self, size, x=0, y=0, id=None):
         """ initializing """
-        super().__init__(id, size, size, x, y)
+        super().__init__(size, size, x, y, id)
 
     def __str__():
         """ return [Square] (<id>) <x>/<y> - <size> """
