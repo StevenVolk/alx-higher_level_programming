@@ -51,7 +51,7 @@ class Square(Rectangle):
         """ assigns an argument to each attribute """
         if id is not None:
             self.id = id
-        if width is not None:
+        if size is not None:
             self.width = width
             self.height = width
         if x is not None:
