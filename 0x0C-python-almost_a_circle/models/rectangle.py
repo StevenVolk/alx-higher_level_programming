@@ -179,3 +179,7 @@ class Rectangle(Base):
             self.__update(*args)
         elif kwargs:
             self.__update(**kwargs)
+
+    def to_dictionary(self):
+        """ returns the dictionary representation of a Rectangle """
+        return self.__dict__
