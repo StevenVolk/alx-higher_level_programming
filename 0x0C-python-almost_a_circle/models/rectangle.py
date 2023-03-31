@@ -170,10 +170,10 @@ class Rectangle(Base):
         if l_args >= 1:
             self.__id(arg_data[0])
         if l_args >= 2:
-            self.width(arg_data[1])
+            self.__width(arg_data[1])
         if l_args >= 3:
-            self.height(arg_data[2])
+            self.__height(arg_data[2])
         if l_args >= 4:
-            self.x(arg_data[3])
+            self.__x(arg_data[3])
         if l_args >= 5:
-            self.y(arg_data[4])
+            self.__y(arg_data[4])
