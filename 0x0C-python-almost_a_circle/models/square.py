@@ -29,5 +29,5 @@ class Square(Rectangle):
     def __str__(self):
         """ return [Square] (<id>) <x>/<y> - <size> """
 
-        return "{0} ({1}) {2}/{3} - {4}"\
+        return "[{}] ({}) {}/{} - {}"\
             .format(type(self).__name__, self.__x, self.__y, self.__width)
