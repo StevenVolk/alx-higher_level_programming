@@ -160,20 +160,20 @@ class Rectangle(Base):
         return "[Rectangle] ({0}) {1}/{2} - {3}/{4}"\
             .format(self.id, self.__x, self.__y, self.__width, self.height)
 
-    def update(self, *args):
+    def __update(self, id=None, width=None, height=None, x=None, y=None):
         """ assigns an argument to each attribute """
-        l_args = 0
-        arg_data = []
-        for arg in args:
-            l_args += 1
-            arg_data.append(arg)
-        if l_args >= 1:
-            self.__id = arg_data[0]
-        if l_args >= 2:
-            self.__width(arg_data[1])
-        if l_args >= 3:
-            self.__height(arg_data[2])
-        if l_args >= 4:
-            self.__x(arg_data[3])
-        if l_args >= 5:
-            self.__y(arg_data[4])
+        if id is not None:
+            self.id(id)
+        if width is not None:
+            self.width = width
+        if height is not None:
+            self.height = height
+        if x is not None:
+            self.x = x
+        if y is not None:
+            self.y = y
+
+    def update(self *args):
+        """ assigns an argument to each attribute """
+        if args:
+            self.__update(*args)
