@@ -77,14 +77,13 @@ class Rectangle(Base):
         """
         return self.__x
 
-    @setter.y
-    def y(self, y):
-        """setting y"""
-        self.__y = y
-
     @property
     def y(self):
         """
         getting y
         """
         return self.__y
+
+    def y(self, y):
+        """setting y"""
+        self.__y = y
