@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-
 """
 
-models/base.py
+the first class Base
 
 """
 
@@ -10,7 +9,7 @@ models/base.py
 class Base:
     """
 
-    class
+     the first class Base
 
     """
 
