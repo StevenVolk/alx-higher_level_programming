@@ -15,7 +15,7 @@ class Square that inherits from Rectangle
 """
 
 
-Square(rectangle):
+Square(Rectangle):
     """
 
     class Square
