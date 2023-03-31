@@ -182,4 +182,7 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """ returns the dictionary representation of a Rectangle """
-        return self.__dict__
+        to_dic = dict()
+        for key in self.__dict__:
+            to_dic[key] = self.__dict__[key]
+        return to_dic
