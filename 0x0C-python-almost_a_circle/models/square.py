@@ -32,12 +32,12 @@ class Square(Rectangle):
             .format(self.id, self.x, self.y, self.height)
 
     @property
-    def width(self):
+    def size(self):
         """ getting width """
         return self.width
 
-    @width.setter
-    def width(self, width):
+    @size.setter
+    def size(self, width):
         """ setting width """
         if type(width) is not int:
             raise TypeError("width must be an integer")
@@ -45,18 +45,4 @@ class Square(Rectangle):
             raise ValueError("width must be > 0")
         else:
             self.__width = width
-
-    @property
-    def height(self):
-        """ getting height """
-        return self.__height
-
-    @height.setter
-    def height(self, height):
-        """ setting height """
-        if type(height) is not int:
-            raise TypeError("height must be an integer")
-        elif height <= 0:
-            raise ValueError("height must be > 0")
-        else:
-            self.__height = height
+            self.__height = width
