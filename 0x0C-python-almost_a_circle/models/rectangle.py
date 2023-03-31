@@ -168,7 +168,7 @@ class Rectangle(Base):
             l_args += 1
             arg_data.append(arg)
         if l_args >= 1:
-            self.id(arg_data[0])
+            self.Rectangle__id(arg_data[0])
         if l_args >= 2:
             self.width(arg_data[1])
         if l_args >= 3:
