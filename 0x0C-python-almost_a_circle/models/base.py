@@ -35,4 +35,4 @@ class Base:
         """ writes the JSON string representation of list_objs to a file """
         _file = type(self).__name__ + ".json"
         with open(_file, "w") as f:
-            f.write(list_objs)
+            f.write(cls.to_json_string(list_objs))
