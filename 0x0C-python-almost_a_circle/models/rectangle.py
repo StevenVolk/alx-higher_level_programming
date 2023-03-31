@@ -38,22 +38,51 @@ class Rectangle(Base):
         self.__width = width
 
     def get_width(self):
+        """
+
+        getting width
+
+        """
         return self.__width
 
     def set_height(self, height):
+        """
+
+        setting height
+
+        """
         self.__height = height
 
     def get_height(self):
+        """
+
+        getting height
+
+        """
         return self.__height
 
     def set_x(self, x):
+        """
+
+        setting x
+
+        """
         self.__x = x
 
     def get_x(self):
+        """
+        
+        getting x
+
+        """
         return self.__x
 
     def set_y(self, y):
+        """setting y"""
         self.__y = y
 
     def get_y(self):
+        """
+        getting y
+        """
         return self.__y
