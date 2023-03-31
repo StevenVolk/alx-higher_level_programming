@@ -165,7 +165,7 @@ class Rectangle(Base):
         l_args = 0
         arg_data = []
         for arg in args:
-            l_args++
+            l_args += 1
             arg_data.append(arg)
         if l_args >= 1:
             self.id(arg_data[0])
