@@ -5,6 +5,7 @@ the first class Base
 
 """
 import json
+import os
 
 
 class Base:
@@ -58,3 +59,15 @@ class Base:
             dummy = cls(1, 1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        filename = cls.__name__ + ".json"
+        os.path.exists(filename) is False:
+            return []
+        with open(filename, 'r') as f:
+            dict_ = cls.from_json_string(f.read())
+            b_dict = []
+            for item in dict_:
+                b_dict.append(cls.creat(**item))
+            return b_dict
