@@ -70,5 +70,5 @@ class Base:
             dict_ = cls.from_json_string(f.read())
             b_dict = []
             for item in dict_:
-                b_dict.append(cls.creat(**item))
+                b_dict.append(cls.create(**item))
             return b_dict
