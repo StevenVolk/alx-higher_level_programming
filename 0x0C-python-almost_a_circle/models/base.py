@@ -30,7 +30,7 @@ class Base:
             return '[]'
         return json.dumps(list_dictionaries)
 
-    @staticmethod
+    @classmethod
     def save_to_file(cls, list_objs):
         """ writes the JSON string representation of list_objs to a file """
         _file = type(cls).__name__ + ".json"
