@@ -64,7 +64,7 @@ class Base:
     def load_from_file(cls):
         """ returns a list of instances """
         filename = cls.__name__ + ".json"
-        os.path.exists(filename) is False:
+        if os.path.exists(filename) is False:
             return []
         with open(filename, 'r') as f:
             dict_ = cls.from_json_string(f.read())
