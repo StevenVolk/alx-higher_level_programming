@@ -1,2 +1,2 @@
 -- a script that creates the MySQL server user user_0d_1
-GRANT ALL PRIVILEGES ON 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd' WITH GRANT OPTION;
+GRANT ALL ON 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
