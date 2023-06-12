@@ -1,5 +1,4 @@
 #!/usr/bin/node
-import process from 'node:process';
 
 /* prints a message depending of the number of arguments passed */
 let len = process.argv.length;
