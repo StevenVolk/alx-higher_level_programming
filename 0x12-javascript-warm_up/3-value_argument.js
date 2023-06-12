@@ -5,7 +5,7 @@ const args = process.argv;
 let len = 0;
 args.forEach((val, index) => {
 	len++;
-	if (index > 1) {
+	if (index === 2) {
 		console.log(val);
 	}
 });
