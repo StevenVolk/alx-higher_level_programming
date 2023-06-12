@@ -2,6 +2,7 @@
 
 /* prints a message depending of the number of arguments passed */
 const len = process.argv.length;
+
 if (len === 2) {
 	console.log('No argument');
 } else if (len === 3) {
