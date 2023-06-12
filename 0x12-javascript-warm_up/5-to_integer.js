@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-num = Number(process.argv[2]);
+num = Math.floor(process.argv[2]);
 if (num) {
 	console.log("Number: " + num);
 } else {
