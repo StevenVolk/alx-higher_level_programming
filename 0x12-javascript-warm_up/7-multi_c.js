@@ -4,8 +4,9 @@
 const times = process.argv[2];
 
 for (let i = 0; i < times; ++i) {
-	console.log("C is fun");
+	console.log('C is fun');
 }
+
 if (!times) {
-	console.log("Missing number of occurrences");
+	console.log('Missing number of occurrences');
 }
