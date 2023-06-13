@@ -1,5 +1,5 @@
 #!/usr/bin/node
-exports add = function (a, b) {
-  console.log(Number(a) + Number(b));
+function add (a, b) {
+  return a + b;
 }
-add(process.argv[2], process.argv[3]);
+module.exports.add = add;
