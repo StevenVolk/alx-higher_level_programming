@@ -4,12 +4,12 @@ const args = process.argv;
 
 let len = 0;
 args.forEach((val, index) => {
-	len++;
-	if (index === 2) {
-		console.log(val);
-	}
+ len++;
+ if (index === 2) {
+  console.log(val);
+ }
 });
 
 if (len === 2) {
-	console.log('No argument');
+ console.log('No argument');
 }
