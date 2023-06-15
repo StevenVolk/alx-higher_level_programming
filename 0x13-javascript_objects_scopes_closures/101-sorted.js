@@ -4,8 +4,8 @@
 
 const dict = require('./101-data').dict;
 const newDict = {};
-for (let key in dict) {
-  let value = dict[key];
+for (const key in dict) {
+  const value = dict[key];
   if (value in newDict) {
     newDict[value].push(key);
   } else {
