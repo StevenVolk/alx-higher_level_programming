@@ -1,5 +1,6 @@
 #!/usr/bin/node
-/*  a class Rectangle that defines a rectangle */
+// a class Rectangle that defines a rectangle
+// print() that prints the rectangle using the character X
 
 module.exports = class Rectangle {
   constructor (w, h) {
