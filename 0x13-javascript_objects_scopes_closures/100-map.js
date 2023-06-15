@@ -3,8 +3,5 @@
 
 const list = require('./100-data').list;
 console.log(list);
-let cloneList = [...list];
-for (let i = 0; i < list.length; ++i) {
-  cloneList[i] = cloneList[i] * i;
-}
+const cloneList = list.map((num, index) => num * index);
 console.log(cloneList);
