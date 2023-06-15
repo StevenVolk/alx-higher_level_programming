@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /* a script that concats 2 files */
 
-var fs = require('fs');
+const fs = require('fs');
 let data = '';
 
 data = data.concat(fs.readFileSync(process.argv[2]));
