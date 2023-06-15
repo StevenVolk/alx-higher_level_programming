@@ -13,5 +13,4 @@ for (let i = 0; i < array.length; i++) {
     big = num;
   }
 }
-
 console.log(big);
