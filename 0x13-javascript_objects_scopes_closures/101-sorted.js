@@ -3,9 +3,9 @@
 /* computes a dictionary of user ids by occurrence */
 
 const dict = require('./101-data').dict;
-let newDict = {};
+const newDict = {};
 for (let key in dict) {
-  value = dict[key];
+  let value = dict[key];
   if (value in newDict) {
     newDict[value].push(key);
   } else {
