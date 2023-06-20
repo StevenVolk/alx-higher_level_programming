@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     database = MYSQLdb.connect(host="localhost", user=argv[1], passwd=argv[2],
                                 database=argv[3], port=3306)
-    database.execute("SELECT * FROM states;")
+    database.execute("SELECT * FROM states ORDER BY states.id;")
     table = database.fetchall()
     for row in table:
         print(row)
