@@ -11,7 +11,7 @@ request(url, function (_err, _res, body) {
   }
 });
 
-function printMov(chars, i) {
+function printMov (chars, i) {
   request(chars[i], function (_err, _res, body) {
     if (!_err) {
       console.log(JSON.parse(body).name);
