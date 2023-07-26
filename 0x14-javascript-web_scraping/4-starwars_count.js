@@ -5,10 +5,10 @@ let num_of_movies = 0;
 request(url, function (error, response, body) {
   body = JSON.parse(body).results;
   for (let i = 0; i < body.length; i++) {
-    const chars = body[i].chars;
+    const chars = body[i].characters;
     for (let j = 0; j < chars.length; j++) {
       const c = chars[j];
-      const charId = c.split('/');
+      const charId = c.split('/')[5];
       if (charId === '18') {
         num_of_movies += 1;
       }
