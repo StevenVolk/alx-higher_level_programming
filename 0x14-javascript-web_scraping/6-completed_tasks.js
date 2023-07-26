@@ -14,7 +14,7 @@ request(process.argv[2], function (_err, _res, body) {
         const id = result.userId;
         if (!(id in dict)) {
           dict[id] = 0;
-	}
+        }
         dict[id] += 1;
       }
     });
