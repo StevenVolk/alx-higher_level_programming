@@ -8,7 +8,7 @@ request(url, function (error, response, body) {
     const chars = body[i].chars;
     for (let j = 0; j < chars.length; j++) {
       const c = chars[j];
-      const charId = c.split('/')[5];
+      const charId = c.split('/');
       if (charId === '18') {
         num_of_movies += 1;
       }
