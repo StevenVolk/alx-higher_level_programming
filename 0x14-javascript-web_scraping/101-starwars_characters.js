@@ -13,7 +13,7 @@ function printMov(chars, i) {
   request(chars[0], function (_err, _res, _body) {
     if (!_err) {
       console.log(JSON.parse(_body).name);
-      if (index + 1 < chars.length) {
+      if (i + 1 < chars.length) {
         printMov(chars, i + 1);
       }
     }
