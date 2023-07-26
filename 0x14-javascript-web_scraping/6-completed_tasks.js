@@ -6,7 +6,7 @@ const dict = {};
 
 request(process.argv[2], function (_err, _res, body) {
   if (_err) {
-    console.log(_err);
+    console.error(_err);
   } else {
     data = JSON.parse(body);
     data.forEach(function (result) {
