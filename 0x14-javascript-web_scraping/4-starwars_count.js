@@ -1,8 +1,10 @@
 #!/usr/bin/node
+
 const request = require('request');
 const url = process.argv[2];
 let num_of_movies = 0;
-request(url, function (_err, _res, body) {
+
+request(url, function (error, res, body) {
   body = JSON.parse(body).results;
   for (let i = 0; i < body.length; i++) {
     const chars = body[i].characters;
