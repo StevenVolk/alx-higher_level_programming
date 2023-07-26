@@ -10,7 +10,7 @@ request(url, function (err, res, body) {
 });
 
 function printMov(chars, i) {
-  request(chars[0], function (_err, _res, _body) {
+  request(chars[i], function (_err, _res, _body) {
     if (!_err) {
       console.log(JSON.parse(_body).name);
       if (i + 1 < chars.length) {
