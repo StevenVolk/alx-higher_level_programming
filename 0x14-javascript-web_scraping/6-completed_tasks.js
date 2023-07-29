@@ -1,23 +1,20 @@
 #!/usr/bin/node
-
 const request = require('request');
 let data;
 const dict = {};
-
-request(process.argv[2], function (_err, _res, body) {
-  if (_err) {
-    console.error(_err);
+request(process.argv[2], function (err, res, body) {
+  if (err) {
+    console.error(err);
   } else {
     data = JSON.parse(body);
-    data.forEach(function (result) {
-      if (result.completed === true) {
-        const id = result.userId;
-        if (!(id in dict)) {
-          dict[id] = 0;
-        }
-        dict[id] += 1;
+    for (let i = 0; i < data.length; i++) {
+      const id = data[i].userId;
+      const completed = data[i].completed;
+      if (completed && !dict[id]) {
+        dict[id] = 0;
       }
-    });
+      if (completed) ++dict[id];
+    }
     console.log(dict);
   }
 });
