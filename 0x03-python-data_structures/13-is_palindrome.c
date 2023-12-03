@@ -26,9 +26,9 @@ int is_palindrome(listint_t **head)
 		array[index++] = check->n;
 		check = check->next;
 	}
-	for (int k = 0; k < num_of_nodes / 2; k++)
+	for (index = 0; index < num_of_nodes / 2; index++)
 	{
-		if (array[k] != array[num_of_nodes - 1 - k])
+		if (array[index] != array[num_of_nodes - 1 - index])
 		{
 			free(array);
 			return (0);
