@@ -23,10 +23,10 @@ int is_palindrome(listint_t **head)
 	check = *head;
 	while (check)
 	{
-		array[index++] = top->n;
+		array[index++] = check->n;
 		check = check->next;
 	}
-	for (k = 0; k < num_of_nodes / 2; k++)
+	for (int k = 0; k < num_of_nodes / 2; k++)
 	{
 		if (array[k] != array[num_of_nodes - 1 - k])
 		{
