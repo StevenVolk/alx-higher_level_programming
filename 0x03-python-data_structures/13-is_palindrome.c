@@ -16,7 +16,7 @@ int is_palindrome(listint_t **head)
 		return (1);
 	while (check)
 	{
-		num_of_nodes++;
+		++num_of_nodes;
 		check = check->next;
 	}
 	array = malloc(sizeof(int) * num_of_nodes);
