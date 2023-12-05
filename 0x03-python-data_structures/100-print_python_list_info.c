@@ -1,4 +1,4 @@
-#include "Python.h"
+#include "/usr/include/python3.8/Python.h"
 #include <stdio.h>
 
 /**
