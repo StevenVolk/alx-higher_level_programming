@@ -8,7 +8,10 @@ def roman_to_int(roman_string):
     if roman_string == None or not(isinstance(roman_string, str)):
         return 0
     for r in range(0, len(roman_string)):
-        num.append(rom_con[roman_string[r]])
+        if roman_string[r] not in rom_con:
+            return 0
+        else:
+            num.append(rom_con[roman_string[r]])
         if len(num) > 1 and num[r-1] < num[r]:
             result = result - (2 * num[r-1]) + num[r]
         else:
