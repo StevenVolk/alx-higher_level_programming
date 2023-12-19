@@ -19,7 +19,7 @@ class Node:
 
     @property
     def data(self):
-        return(self.__data)
+        return (self.__data)
 
     @data.setter
     def data(self, value):
@@ -29,7 +29,7 @@ class Node:
 
     @property
     def next_node(self):
-        return(self.__next_node)
+        return (self.__next_node)
 
     @next_node.setter
     def next_node(self, value):
@@ -83,4 +83,4 @@ class SinglyLinkedList:
             node = node.next_node
             if node:
                 d += "\n"
-        return(d)
+        return (d)
