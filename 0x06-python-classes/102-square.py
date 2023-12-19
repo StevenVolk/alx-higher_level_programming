@@ -22,11 +22,11 @@ class Square:
             self.size = size
 
     def area(self):
-        return(self.size ** 2)
+        return (self.size ** 2)
 
     @property
     def size(self):
-        return(self.__size)
+        return (self.__size)
 
     @size.setter
     def size(self, value):
@@ -38,19 +38,19 @@ class Square:
             self.__size = value
 
     def __eq__(self, other):
-        return(self.size == other.size)
+        return (self.size == other.size)
 
     def __ne__(self, other):
-        return(self.size != other.size)
+        return (self.size != other.size)
 
     def __le__(self, other):
-        return(self.size <= other.size)
+        return (self.size <= other.size)
 
     def __ge__(self, other):
-        return(self.size >= other.size)
+        return (self.size >= other.size)
 
     def __lt__(self, other):
-        return(self.size < other.size)
+        return (self.size < other.size)
 
     def __gt__(self, other):
-        return(self.size > other.size)
+        return (self.size > other.size)
