@@ -59,21 +59,16 @@ class SinglyLinkedList:
         new_node = Node(value)
         if self.__head is None:
             self.__head = new_node
-        prev = None
-        node = self.__head
-        while (node):
-            if new_node.data < node.data:
-                if prev:
-                    prev.next_node = new_node
-                else:
-                    self.__head = new_node
-                new_node.next_node = node
-                break
-            else:
-                prev = node
-                node = node.next_node
+            new_node.next = None
+        elif self.__head.data > value:
+            new_node.next_node = self.__head
+            self.__head = new_node
         else:
-            prev.next_node = new_node
+            node = self.__head
+            while (node.next_node is not None and node.next_node < value):
+                node = node.next_node
+            new_node.next_node = node.next_node
+            node.next_node = new_node
 
     def __str__(self):
         node = self.__head
